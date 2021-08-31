@@ -1,0 +1,113 @@
+<!doctype html>
+
+
+<head>
+
+    <title>Cab Price Prediction Portal</title>
+</head>
+
+<body>
+
+
+
+
+    <h2>Fill The Below Details For Vehicle Price Prediction</h2>
+
+
+    <form action='/fildetails' method='post'>
+
+        <b>
+         
+            <label >Vehical Name</label>
+            
+            <select name="name" >
+                    
+                <option selected>Select Vehicles</option>
+                <option value='Lux'>Lux </option> 
+                <option value="Shared">Shared</option>
+                <option value='Lyft'>Lyft</option>
+                <option value="Lux Black XL">Lux Black XL</option>   
+                <option value="Lyft XL">Lyft XL</option>
+                <option value="Lux Black">Lux Black</option> 
+                <option value="Uber XL">UberXL</option>
+                <option value="Black">Black</option>  
+                <option value="UberX">UberX</option>
+                <option value="WAV">WAV</option>   
+                <option value="Black SUV">Black SUV</option> 
+                <option value="UberPool">UberPool</option>  
+                <option value="Taxi">Taxi</option>
+            </select>
+        
+            <br>
+            <br>
+                <label>Distance</label>
+           
+
+                <input type='number' placeholder='Input Distance' name='distance'></p>
+           
+                <label>Surge_Multiplier  </label>
+                
+                <input type="number" placeholder='Input Surge_Multiplier' name='multiplier' ></p>
+            
+            
+           
+                <label>Source</label>
+                <select  name="source">
+                    <option selected>Select Destination</option>
+                    <option value='Back Bay'>Back Bay</option> 
+                    <option value="Beacon Hill">Beacon Hill</option>
+                    <option value='Boston University'>Boston University</option>
+                    <option value="Fenway">Fenway</option>   
+                    <option value="Haymarket Square">Haymarket Square</option>
+                    <option value="Financial District">Financial District</option>
+                    <option value="North End">North End</option> 
+                    <option value="North Station">North Station</option>   
+                    <option value="Northeastern University">Northeastern University</option>
+                    <option value="South Station">South Station</option> 
+                    <option value="Theatre District">Theatre District</option>
+                    <option value="West End">West End</option> </select></p>
+                </select>
+          
+        
+
+      
+                <label>Destination</label>
+                <select  name="destination" >
+                    <option selected>Select Destination</option>
+                    <option value='Back Bay'>Back Bay</option> 
+                    <option value="Beacon Hill">Beacon Hill</option>
+                    <option value='Boston University'>Boston University</option>
+                    <option value="Fenway">Fenway</option>   
+                    <option value="Haymarket Square">Haymarket Square</option>
+                    <option value="Financial District">Financial District</option>
+                    <option value="North End">North End</option> 
+                    <option value="North Station">North Station</option>   
+                    <option value="Northeastern University">Northeastern University</option>
+                    <option value="South Station">South Station</option> 
+                    <option value="Theatre District">Theatre District</option>
+                    <option value="West End">West End</option> </select></p>
+                </select>
+            
+        
+       
+            <h1>
+            
+            <button type="submit" value="submit">Submit</button>
+
+            <input type="reset" value='Reset'>
+        
+        </form>
+    
+            
+            <br>
+            <br> Predicted Price is : {{prd}}
+            
+        </h1>
+        
+    </div>
+
+
+
+</body>
+
+</html>
